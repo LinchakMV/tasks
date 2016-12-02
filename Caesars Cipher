@@ -1,0 +1,14 @@
+function rot13(str) {
+  var codeArr = str.split("");  // String to Array
+  var decodedArr = [], newletterCode; // Your Result goes here
+  // Only change code below this line
+  codeArr.forEach(function(letter){
+       newletterCode = (letter.charCodeAt() < 65 || letter.charCodeAt() > 90)? letter.charCodeAt() : (letter.charCodeAt() + 13 > 90 )? letter.charCodeAt() - 13 : letter.charCodeAt() + 13;
+       decodedArr.push(String.fromCharCode(newletterCode));
+  });
+  // Only change code above this line
+  return decodedArr.join(""); // Array to String
+}
+
+// Change the inputs below to test
+console.log(rot13("SERR PBQR PNZC"));
