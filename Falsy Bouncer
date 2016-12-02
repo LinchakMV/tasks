@@ -1,0 +1,9 @@
+function bouncer(arr) {
+  function isTru(arg){
+    return Boolean(arg);
+  }
+  var filteredArray = arr.filter(isTru);
+  return filteredArray;
+}
+
+bouncer([7, "ate", "", false, 9]);
