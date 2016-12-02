@@ -1,0 +1,17 @@
+function mutation(arr) {
+  var first=arr[0].toLowerCase().split("");
+  var second=arr[1].toLowerCase().split("");
+  var tmp=0;
+  for (var i in second){
+        if (first.indexOf(second[i]) > -1) {
+            tmp+= 0;
+        } else
+            tmp+=1;
+        }
+    if (tmp === 0){
+        return true;
+    }else{
+        return false;}
+}
+
+console.log(mutation(["hello", "hey"]));
