@@ -1,0 +1,19 @@
+function booWho(bool) {
+  
+  var t = true;
+  var f = false;
+  
+  if(bool === t)
+  {
+    return true;
+  }
+  else if(bool === f)
+  {
+    return true;
+  }
+  else
+    return false;
+}
+
+
+booWho(null);
